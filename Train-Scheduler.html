@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Grande Vitesse</title>
+     
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+
+	<div class="container">
+	
+	<div class="row">
+		<div class="jumbotron">
+			<h1 class="text-center">The Bullet Train</h1>
+			<h4 class="text-center">Baby TGV!</h4>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="card">
+			<div class="card-header">Current Train Schedule</div>
+
+			<div class="card-block"> 
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Train Line</th>
+							<th>Destination</th>
+							<th>Frequency</th>
+							<th>Next Arrival</th>
+							<th>Minutes Away </th>
+						</tr>
+					</thead>
+					<tbody id="table-body">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="card">
+			<div class="card-header">Add Train</div>
+			<div class="card-block">
+				<form class="p-3">
+					<div class="form-group">
+						<label>Line Name</label>
+						<input id="line-input" class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<label>Destination</label>
+						<input id="destination-input" class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<label>First Train Time (HH-mm- military time)</label>
+						<input id="nextArrival-input" class="form-control" type="text">
+					</div>
+					
+					<div class="form-group">
+						<label>minutesAway</label>
+						<input id="minutesAway-input" class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<label>frequency-input</label>
+						<input id="frequency-input" class="form-control" type="text">
+					</div>
+
+					<button id="submit-btn" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script type="text/javascript" src="Train-Scheduler.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</div>
+		
+           	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+</body>
+</html>
